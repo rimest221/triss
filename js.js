@@ -71,10 +71,7 @@ function annunciaVincitore(vincitore) {
   } else {
     messaggio.textContent = `Giocatore ${vincitore} vince!`;
   }
-  Array.from(griglia.children).forEach((cella) => {
-    const nuovaCella = cella.cloneNode(true);
-    cella.parentNode.replaceChild(nuovaCella, cella);
-  });
+  griglia.classList.add("none");
 }
 
 inizializzaGriglia();

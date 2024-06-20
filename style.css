@@ -17,3 +17,7 @@
   font-size: 36px;
   cursor: pointer;
 }
+
+.none {
+  display: none;
+}
